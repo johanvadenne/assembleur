@@ -1,0 +1,45 @@
+[Project]
+Assembler=masm
+Type=Console App
+Description=prog1
+Backup=$P\Bak\
+Group=1
+GroupExpand=1
+[Files]
+1=prog1.Asm
+2=prog1.Inc
+[MakeFiles]
+0=prog1.rap
+1=prog1.rc
+2=prog1.asm
+3=prog1.obj
+4=prog1.res
+5=prog1.exe
+6=prog1.def
+7=prog1.dll
+8=prog1.txt
+9=prog1.lib
+10=prog1.mak
+11=prog1.hla
+12=prog1.com
+13=prog1.ocx
+14=prog1.idl
+15=prog1.tlb
+16=prog1.sys
+[MakeDef]
+Menu=0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0
+1=4,O,$B\RC.EXE /v,1
+2=3,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",2
+3=5,O,$B\LINK.EXE /SUBSYSTEM:CONSOLE /RELEASE /VERSION:4.0 /LIBPATH:"$L" /OUT:"$5",3
+4=0,0,,5
+5=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+6=*.obj,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",*.asm
+7=0,0,"$E\OllyDbg",5
+[Group]
+Group=Assembly,Resources,Misc
+1=2
+2=2
+[AutoLoad]
+AutoLoad=
+[RADebugBP]
+1=

@@ -39,12 +39,10 @@ Users_Txt = e:\vss60db\vssdb\users.txt
 
 -------------------------------------------------------------------------------
 
-Version 1.0.0.5
+Version 1.0.0.7
 
 Known issues.
 -------------
-o Projects with duplicate filenames (in different folders).
-	- You will be given a warning and will not be able to add any files.
 o Dialogs.
 	- The dialogs RC file is NOT part of source safe project.
 o Menus.

@@ -1,6 +1,6 @@
 {\rtf1\ansi\ansicpg1252\deff0\deflang1044{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Courier New;}{\f2\froman\fprq2\fcharset0 Times New Roman;}}
 {\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red192\green192\blue192;}
-{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\cf1\f0\fs28 RadASM.ini, Assembler.ini and project file documentation. (Version 2.2.1.1)\par
+{\*\generator Msftedit 5.41.21.2509;}\viewkind4\uc1\pard\cf1\f0\fs28 RadASM.ini, Assembler.ini and project file documentation. (Version 2.2.1.7)\par
 \par
 \cf2\fs20 In this documentation the terms \cf1 TRUE \cf2 and \cf1 FALSE\cf2  is used. In the actual ini file use 1 and 0.\par
 \cf1\fs24\par
@@ -517,6 +517,9 @@ x=Start,End,DontHide1,DontHide2,flag[,wg\}\tab x is a number between 1 and 16. N
 Code write helpers. (Listbox and tooltip)\par
 Manually maintained.\par
 \par
+NOTE!\par
+For assemblers / compilers that supports several operating systems there can be more than one section with a different section name. The form [ApiXXXXX] is recomended.\par
+\par
 Trig=\tab\tab\tab\tab\tab List of keywords that triggers the api list and tooltip\par
 Call=\tab\tab\tab\tab\tab Filename of api list. Can be a commaseparated list of files.\par
 Const=\tab\tab\tab\tab\tab Filename of api constants list. Can be a commaseparated list of files.\par
@@ -761,6 +764,9 @@ Used to create defaults in a new RadASM project.\par
 Manually maintained.\par
 Note that 'ProjectType' is one of the Type= in section [Project] \par
 \par
+Api=\tab\tab\tab\tab\tab Name of section in Assembler.ini. It specifies,\par
+\tab\tab\tab\tab\tab among others, which api files to load.\par
+\tab\tab\tab\tab\tab The default is Api\par
 Files=\tab\tab\tab\tab\tab List of TRUE or FALSE to create files.\par
 Folders=\tab\tab\tab\tab\tab List of TRUE or FALSE to create folders.\par
 MenuMake=\tab\tab\tab\tab List of TRUE or FALSE to activate make menu.\par

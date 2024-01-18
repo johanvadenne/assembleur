@@ -6,9 +6,9 @@ The export is done ONLY if the rsrc.xxx file exists in the projects root folder.
 
 rsrc.xxx:
 ------------------------
-Assembly	rsrc.inc
-Hla		rsrc.hhf
-C/C++		rsrc.h
-bcet, fb	rsrc.bi
+Assembly		rsrc.inc
+Hla				rsrc.hhf
+C/C++			rsrc.h
+bcet, fb		rsrc.bi
 
 KetilO
