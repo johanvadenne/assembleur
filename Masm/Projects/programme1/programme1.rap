@@ -1,0 +1,45 @@
+[Project]
+Assembler=masm
+Type=Console App
+Description=mon tout premier programme assembleur
+Backup=$P\Bak\
+Group=1
+GroupExpand=1
+[Files]
+1=programme1.Asm
+2=programme1.Inc
+[MakeFiles]
+0=programme1.rap
+1=programme1.rc
+2=programme1.asm
+3=programme1.obj
+4=programme1.res
+5=programme1.exe
+6=programme1.def
+7=programme1.dll
+8=programme1.txt
+9=programme1.lib
+10=programme1.mak
+11=programme1.hla
+12=programme1.com
+13=programme1.ocx
+14=programme1.idl
+15=programme1.tlb
+16=programme1.sys
+[MakeDef]
+Menu=0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0
+1=4,O,$B\RC.EXE /v,1
+2=3,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",2
+3=5,O,$B\LINK.EXE /SUBSYSTEM:CONSOLE /RELEASE /VERSION:4.0 /LIBPATH:"$L" /OUT:"$5",3
+4=0,0,,5
+5=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+6=*.obj,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",*.asm
+7=0,0,"$E\OllyDbg",5
+[Group]
+Group=Assembly,Resources,Misc
+1=2
+2=2
+[AutoLoad]
+AutoLoad=
+[RADebugBP]
+1=
