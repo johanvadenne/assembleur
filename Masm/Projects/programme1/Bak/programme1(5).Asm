@@ -10,17 +10,16 @@ include \masm32\include\masm32rt.inc
 
 salut :
 
+	mov ebx, 18
 	print  "mon chiffre prefere est:", 13, 10
-	mov eax, 18
+	print str$ (ebx), 13, 10
+	mov ecx, 18
+	print  "mon chiffre prefere est:", 13, 10
+	print str$ (ecx), 13, 10
+	mov edx, 18
+	print  "mon chiffre prefere est:", 13, 10
+	print str$ (edx), 13, 10
 	inkey "Appuyez sur une touche pour continuer..."
-	print str$ (eax), 13, 10
-	inkey "Appuyez sur une touche pour continue"
-	print str$ (eax), 13, 10
-	inkey "Appuyez sur une touche pour continuer..."
-	print str$ (eax), 13, 10
-	inkey "pu..."
-	print str$ (eax), 13, 10
-	inkey "pu..."
 	exit  
  
 end salut

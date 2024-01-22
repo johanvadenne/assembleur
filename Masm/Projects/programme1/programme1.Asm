@@ -1,21 +1,16 @@
-.386
-.model flat, stdcall
-option casemap : none
-
-include \masm32\include\masm32rt.inc
-
+.model small
+.data
+    message db 'Hello, World!', 0
 
 .code
+_main:
+    ; Afficher la chaîne de caractères
+    mov ah, 09h
+    lea dx, message
+    int 21h
 
+    ; Terminer le programme
+    mov ah, 4Ch
+    int 21h
 
-salut :
-
-   mov ax, 50       ; enregistrement du nombre dans ax
-
-   movzx eax, ax      ; copie du registre ax dans le registre eax
- print str$ (eax)   ; affichage de eax
-
- inkey "Appuyez sur une touche pour continuer..."
- exit  
- 
-end salut
+end _main

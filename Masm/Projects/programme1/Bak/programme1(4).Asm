@@ -12,13 +12,13 @@ salut :
 
 	mov ebx, 18
 	print  "mon chiffre prefere est:", 13, 10
-	print str$ (eax), 13, 10
+	print str$ (ebx), 13, 10
 	mov ecx, 18
 	print  "mon chiffre prefere est:", 13, 10
-	print str$ (eax), 13, 10
+	print str$ (ecx), 13, 10
 	mov edx, 18
 	print  "mon chiffre prefere est:", 13, 10
-	print str$ (eax), 13, 10
+	print str$ (ax), 13, 10
 	inkey "Appuyez sur une touche pour continuer..."
 	exit  
  

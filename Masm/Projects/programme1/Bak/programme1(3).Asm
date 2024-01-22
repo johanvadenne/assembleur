@@ -10,16 +10,12 @@ include \masm32\include\masm32rt.inc
 
 salut :
 
-	mov ebx, 18
-	print  "mon chiffre prefere est:", 13, 10
-	print str$ (ebx), 13, 10
-	mov ecx, 18
-	print  "mon chiffre prefere est:", 13, 10
-	print str$ (ecx), 13, 10
-	mov edx, 18
-	print  "mon chiffre prefere est:", 13, 10
-	print str$ (edx), 13, 10
-	inkey "Appuyez sur une touche pour continuer..."
-	exit  
+   mov ax, 50       ; enregistrement du nombre dans ax
+
+   mov eax, ax      ; copie du registre ax dans le registre eax
+ print str$ (eax)   ; affichage de eax
+
+ inkey "Appuyez sur une touche pour continuer..."
+ exit  
  
 end salut

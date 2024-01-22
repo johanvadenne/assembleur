@@ -14,7 +14,13 @@ salut :
 	mov eax, 18
 	inkey "Appuyez sur une touche pour continuer..."
 	print str$ (eax), 13, 10
+	inkey "Appuyez sur une touche pour continue"
+	print str$ (eax), 13, 10
 	inkey "Appuyez sur une touche pour continuer..."
+	print str$ (eax), 13, 10
+	inkey "pu..."
+	print str$ (eax), 13, 10
+	inkey "pu..."
 	exit  
  
 end salut

@@ -10,22 +10,11 @@ include \masm32\include\masm32rt.inc
 
 salut :
 
-; Premier affichage : sans le message "Contenu de eax"
-
-   mov eax, 67
-
- print str$ (eax)
- print " ", 13, 10
-
-; Deuxième affichage : avec le message "Contenu de eax"
-
-   mov eax, 67
-
- print "Contenu de eax : "
- print str$ (eax)
- print " ", 13, 10
-
- inkey "Appuyez sur une touche pour continuer..."
- exit  
+	print  "mon chiffre prefere est:", 13, 10
+	mov eax, 18
+	inkey "Appuyez sur une touche pour continuer..."
+	print str$ (eax), 13, 10
+	inkey "Appuyez sur une touche pour continuer..."
+	exit  
  
 end salut
